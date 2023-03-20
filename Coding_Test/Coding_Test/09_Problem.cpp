@@ -26,6 +26,7 @@ int My_No09()
 	return 0;
 }
 
+// dp를 생각하자!
 int No09()
 {
 	int N;
