@@ -169,6 +169,14 @@
     <ClCompile Include="28_Problem.cpp" />
     <ClCompile Include="29_Problem.cpp" />
     <ClCompile Include="31_Problem.cpp" />
+    <ClCompile Include="32_Problem.cpp" />
+    <ClCompile Include="33_Problem.cpp" />
+    <ClCompile Include="34_Problem.cpp" />
+    <ClCompile Include="35_Problem.cpp" />
+    <ClCompile Include="36_Problem.cpp" />
+    <ClCompile Include="37_Problem.cpp" />
+    <ClCompile Include="38_Problem.cpp" />
+    <ClCompile Include="39_Problem.cpp" />
     <ClCompile Include="format.cpp" />
   </ItemGroup>
   <ItemGroup>

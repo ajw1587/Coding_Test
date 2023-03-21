@@ -52,9 +52,9 @@ int No31()
 	return 0;
 }
 
-int main()
-{
-	No31();
-
-	return 0;
-}
+//int main()
+//{
+//	No31();
+//
+//	return 0;
+//}
