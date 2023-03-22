@@ -177,6 +177,15 @@
     <ClCompile Include="37_Problem.cpp" />
     <ClCompile Include="38_Problem.cpp" />
     <ClCompile Include="39_Problem.cpp" />
+    <ClCompile Include="40_Problem.cpp" />
+    <ClCompile Include="41_Problem.cpp" />
+    <ClCompile Include="42_Problem.cpp" />
+    <ClCompile Include="43_Problem.cpp" />
+    <ClCompile Include="44_Problem.cpp" />
+    <ClCompile Include="45_Problem.cpp" />
+    <ClCompile Include="46_Problem.cpp" />
+    <ClCompile Include="47_Problem.cpp" />
+    <ClCompile Include="48_Problem.cpp" />
     <ClCompile Include="format.cpp" />
   </ItemGroup>
   <ItemGroup>
