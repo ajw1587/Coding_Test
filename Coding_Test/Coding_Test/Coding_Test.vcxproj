@@ -186,6 +186,11 @@
     <ClCompile Include="46_Problem.cpp" />
     <ClCompile Include="47_Problem.cpp" />
     <ClCompile Include="48_Problem.cpp" />
+    <ClCompile Include="49_Problem.cpp" />
+    <ClCompile Include="50_Problem.cpp" />
+    <ClCompile Include="51_Problem.cpp" />
+    <ClCompile Include="52_Problem.cpp" />
+    <ClCompile Include="53_Problem.cpp" />
     <ClCompile Include="format.cpp" />
   </ItemGroup>
   <ItemGroup>

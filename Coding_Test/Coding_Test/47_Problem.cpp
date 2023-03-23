@@ -40,9 +40,9 @@ int No47()
 	return 0;
 }
 
-int main()
-{
-	No47();
-
-	return 0;
-}
+//int main()
+//{
+//	No47();
+//
+//	return 0;
+//}
