@@ -5,8 +5,8 @@
 using namespace std;
 using namespace chrono;
 
-// 
-int No()
+// 이진트리 깊이우선 탐색(DFS)
+int No58()
 {
 	system_clock::time_point start = system_clock::now();
 
@@ -20,7 +20,7 @@ int No()
 
 int main()
 {
-	No();
+	No58();
 
 	return 0;
 }
