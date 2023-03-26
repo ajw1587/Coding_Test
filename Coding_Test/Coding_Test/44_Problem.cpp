@@ -73,9 +73,9 @@ int No44()
 	return 0;
 }
 
-//int main()
-//{
-//	No44();
-//
-//	return 0;
-//}
+int main()
+{
+	No44();
+
+	return 0;
+}
