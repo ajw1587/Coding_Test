@@ -83,10 +83,10 @@ int No38()
 	return 0;
 }
 
-//int main()
-//{
-//	My_No38();	// 72
-//	No38();		// 5
-//
-//	return 0;
-//}
+int main()
+{
+	My_No38();	// 72
+	No38();		// 5
+
+	return 0;
+}
