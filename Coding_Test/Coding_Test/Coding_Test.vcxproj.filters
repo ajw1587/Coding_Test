@@ -114,13 +114,13 @@
     <ClCompile Include="33_Problem.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="34_Problem.cpp">
+    <ClCompile Include="34_Problem_Bubble_Sort.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="35_Problem.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="36_Problem.cpp">
+    <ClCompile Include="36_Problem_Insert_Sort.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="37_Problem.cpp">
@@ -198,7 +198,7 @@
     <ClCompile Include="61_Problem.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="62_Problem_MergeSort.cpp">
+    <ClCompile Include="62_Problem_Merge_Sort.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="63_Problem.cpp">
@@ -240,7 +240,13 @@
     <ClCompile Include="76_Problem_FAC.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="77_Problem.cpp">
+    <ClCompile Include="77_Problem_Union_Find.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="78_Problem_Kruskal_MST.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="79_Problem_Prim_MST_priority_queue.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
