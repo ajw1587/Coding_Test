@@ -58,19 +58,6 @@ bool cmp2(Edge a, Edge b)
 	return a.val < b.val;
 }
 
-//int Find(int v)
-//{
-//	if (v == unf[v]) return v;
-//	else return unf[v] = Find(unf[v]);
-//}
-//
-//void Union(int a, int b)
-//{
-//	a = Find(a);
-//	b = Find(b);
-//	if (a != b) unf[a] = b;
-//}
-
 int Find(int a)
 {
 	if (a == unf[a]) return a;
@@ -102,16 +89,6 @@ int No78()
 
 	sort(edge.begin(), edge.end(), cmp2);
 
-	//for (int i = 0; i < E; i++)
-	//{
-	//	int fa = Find(edge[i].v1);
-	//	int fb = Find(edge[i].v2);
-	//	if (fa != fb)
-	//	{
-	//		res += edge[i].val;
-	//		Union(edge[i].v1, edge[i].v2);
-	//	}
-	//}
 	for (int i = 0; i < E; i++)
 	{
 		int fa = Find(edge[i].v1);

@@ -18,89 +18,21 @@ using namespace chrono;
 // 모든 도시를 연결하면서 드는 최소비용을 출력하시오.
 // 
 
-int V = 9, E = 12, res = 0;
-vector<vector<int>> dis =
-{ {1, 2, 12},
-	{2, 3, 10},
-	{7, 8, 35},
-	{2, 8, 17},
-	{2, 9, 8},
-	{3, 4, 18},
-	{1, 9, 25},
-	{3, 7, 55},
-	{4, 5, 44},
-	{5, 6, 60},
-	{5, 7, 38},
-	{8, 9, 15} };
+struct Edge
+{
+	int v2, weight;
 
-struct Edge {
-	int v1, v2, weight;
-	Edge(int a, int b, int c)
+	Edge(int b, int c)
 	{
-		v1 = a;
 		v2 = b;
 		weight = c;
 	}
+
+	bool operator<(const Edge &b)const
+	{
+		return weight > b.weight;
+	}
 };
-
-bool cmp(Edge a, Edge b)
-{
-	return a.weight < b.weight;
-}
-
-vector<int> ch(V + 1);
-
-int Find(int a)
-{
-	if (ch[a] == a) return a;
-	else return ch[a] = Find(ch[a]);
-}
-
-void Union(int a, int b)
-{
-	int fa = Find(a);
-	int fb = Find(b);
-	if (fa != fb) ch[a] = fb;
-}
-
-int My_No79()	// Kruskal 복습
-{
-	system_clock::time_point start = system_clock::now();
-
-	// dis 정보 Edge에 담아주기
-	vector<Edge> edge;
-	for (int i = 0; i < E; i++)
-	{
-		edge.push_back(Edge(dis[i][0], dis[i][1], dis[i][2]));
-	}
-
-	// Edge Weight 기준으로 정렬하기
-	sort(edge.begin(), edge.end(), cmp);
-
-	// ch 노드정보 채워주기
-	for (int i = 0; i < ch.size(); i++)
-	{
-		ch[i] = i;
-	}
-
-	// Find, Union 해주기
-	int res = 0;
-	for (int i = 0; i < E; i++)
-	{
-		int fa = Find(edge[i].v1);
-		int fb = Find(edge[i].v2);
-		if (fa != fb)
-		{
-			res += edge[i].weight;
-			Union(fa, fb);
-		}
-	}
-
-	system_clock::time_point end = system_clock::now();
-	microseconds micro = duration_cast<microseconds>(end - start);
-	cout << "소요 시간 : " << micro.count() << endl;
-	return 0;
-}
 
 int No79()	// priority_queue
 {
@@ -126,16 +58,32 @@ int No79()	// priority_queue
 	for (int i = 0; i < info.size(); i++)
 	{
 		iv[info[i][0]].push_back(make_pair(info[i][1], info[i][2]));
+		iv[info[i][1]].push_back(make_pair(info[i][0], info[i][2]));
 	}
 
 	// check 만들어주기
 	vector<bool> check(10, 0);
 
 	// 진행해주기
-	priority_queue<pair<int, int>> pq;
+	int res = 0, cnt = 9;
+	priority_queue<Edge> pq;
+	pq.push(Edge(1, 0));
 	while (!pq.empty())
 	{
-
+		Edge tmp = pq.top();
+		pq.pop();
+		int e = tmp.v2;
+		int weight = tmp.weight;
+		if (check[e] == 0 && cnt != 0)
+		{
+			check[e] = 1;
+			cnt--;
+			res += weight;
+			for (int i = 0; i < iv[e].size(); i++)
+			{
+				pq.push(Edge(iv[e][i].first, iv[e][i].second));
+			}
+		}
 	}
 
 	system_clock::time_point end = system_clock::now();
@@ -146,7 +94,6 @@ int No79()	// priority_queue
 
 int main()
 {
-	My_No79();
 	No79();
 
 	return 0;

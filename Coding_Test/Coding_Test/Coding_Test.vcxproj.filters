@@ -249,6 +249,12 @@
     <ClCompile Include="79_Problem_Prim_MST_priority_queue.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="80_Problem_Dijkstra.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="81_Problem_Bellman_Ford.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
