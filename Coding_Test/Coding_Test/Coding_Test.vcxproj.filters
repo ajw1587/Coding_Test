@@ -255,6 +255,15 @@
     <ClCompile Include="81_Problem_Bellman_Ford.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="82_Problem_순열구하기_DFS.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="83_Problem_복면산.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="84_Problem_휴가_DFS.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">

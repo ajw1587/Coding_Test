@@ -100,7 +100,7 @@ struct Bell_Edge
 	{
 		s = a;
 		e = b;
-		c = val;
+		val = c;
 	}
 };
 
@@ -113,25 +113,57 @@ int No81()
 	vector<vector<int>> info =
 	{ { 1, 2, 5 },
 	{ 1, 3, 4 },
-	{ 2, 3, -3 },
+	{ 2, 3, -9 },
 	{ 2, 5, 13 },
 	{ 3, 4, 5 },
 	{ 4, 2, 3 },
 	{ 4, 5, 7 } };
 
-	// vector<Edge> 만들어 주기
+	// vector<Edge> 만들어 주기 (간선 정보)
 	vector<Bell_Edge> Ed;
 	for (int i = 0; i < info.size(); i++)
 	{
 		Ed.push_back(Bell_Edge(info[i][0], info[i][1], info[i][2]));
 	}
 
-	// dist
-	vector<int> dist(101, 2147000000);
-	
-	// 시작
-	dist[S] = 0;
-	for(int i = 1; i < )
+	// 거리 정보 만들어주기
+	vector<vector<int>> l_info(N+1, vector<int>(N+1, 2147000000));
+
+	int i = 0;
+	l_info[0][1] = 0;
+	for (i = 1; i < N; i++)
+	{
+		l_info[i][1] = 0;
+		for (int j = 0; j < Ed.size(); j++)
+		{
+			int s = Ed[j].s;
+			int e = Ed[j].e;
+			int val = Ed[j].val;
+
+			if (l_info[i - 1][s] == 2147000000) continue;
+
+			if (l_info[i - 1][s] + val <= l_info[i - 1][e])
+			{
+				l_info[i][e] = l_info[i - 1][s] + val;
+			}
+		}
+	}
+
+	// 음의 사이클 검토
+	for (int j = 0; j < Ed.size(); j++)
+	{
+		int s = Ed[j].s;
+		int e = Ed[j].e;
+		int val = Ed[j].val;
+
+		if (l_info[i - 1][s] == 2147000000) continue;
+
+		if (l_info[i - 1][s] + val <= l_info[i - 1][e])
+		{
+			cout << -1 << endl;
+			exit(0);
+		}
+	}
 
 	system_clock::time_point end = system_clock::now();
 	microseconds micro = duration_cast<microseconds>(end - start);
