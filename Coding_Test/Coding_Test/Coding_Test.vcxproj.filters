@@ -189,7 +189,7 @@
     <ClCompile Include="58_Problem_DFS.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="59_Problem.cpp">
+    <ClCompile Include="59_Problem_부분집합.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="60_Problem.cpp">
@@ -207,7 +207,7 @@
     <ClCompile Include="64_Problem_DFS.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="65_Problem.cpp">
+    <ClCompile Include="65_Problem_DFS_미로탐색.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="66_Problem.cpp">
@@ -262,6 +262,12 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="84_Problem_휴가_DFS.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="85_Problem_수식만들기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="86_Problem_피자배달.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
