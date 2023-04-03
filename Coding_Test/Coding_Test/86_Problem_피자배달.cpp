@@ -30,55 +30,29 @@ int GetDis(int x1, int y1, int x2, int y2)
 	return abs(x1 - x2) + abs(y1 - y2);
 }
 
-void DFS(int L, int s, vector<int> &ch, vector<pair<int, int>> pizzas, vector<pair<int, int>> homes)
+void DFS(int idx, int S, vector<int> &res, vector<pair<int,int>> pizzas, vector<pair<int, int>> homes)
 {
-	if (L == 4)
+	if (idx == 4)
 	{
-		for (int i = 0; i < ch.size(); i++)
+		int sum = 0;
+		for (int i = 0; i < homes.size(); i++)
 		{
-			cout << ch[i] << ' ';
+			int x1 = homes[i].first;
+			int y1 = homes[i].second;
+			for (int j = 0; j < res.size(); j++)
+			{
+				int x2 = pizzas[res[j]].first;
+				int y2 = pizzas[res[j]].second;
+			}
 		}
-		cout << endl;
 	}
 	else
 	{
-		for (int i = s; i < pizzas.size(); i++)
+		for (int i = S; i < pizzas.size(); i++)
 		{
-			ch[L] = i;
-			DFS(L + 1, i + 1, ch, pizzas, homes);
+			res[idx] = i;
+			DFS(idx + 1, i + 1, res, pizzas, homes);
 		}
-	}
-}
-
-vector<bool> ch(6, 0);
-
-void test_DFS(int idx, int s, vector<int>& res, vector<int> test)
-{
-	if (idx == 5)
-	{
-		for (int i = 0; i < 5; i++)
-		{
-			cout << res[i] << ' ';
-		}
-		cout << endl;
-	}
-	else
-	{
-		for (int i = s; i < test.size(); i++)
-		{
-			res[idx] = test[i];
-			test_DFS(idx + 1, i + 1, res, test);
-		}
-		//for (int i = s; i < test.size(); i++)
-		//{
-		//	if (ch[i] == 0)
-		//	{
-		//		ch[i] = 1;
-		//		res[idx] = test[i];
-		//		test_DFS(idx + 1, 0, res, test);
-		//		ch[i] = 0;
-		//	}
-		//}
 	}
 }
 
@@ -95,7 +69,7 @@ int No86()
 
 	vector<pair<int, int>> pizzas;
 	vector<pair<int, int>> homes;
-	vector<int> ch(M, 0);
+	vector<int> res(M, 0);
 
 	for (int i = 0; i < map.size(); i++)
 	{
@@ -112,19 +86,7 @@ int No86()
 		}
 	}
 
-	DFS(0, 0, ch, pizzas, homes);
-	cout << endl;
-	cout << endl;
-
-	////////////////////////////////////////////////////////////
-	vector<int> test(6, 0);
-	vector<int> res(5, 0);
-	for (int i = 0; i < test.size(); i++)
-	{
-		test[i] = i + 1;
-	}
-
-	test_DFS(0, 0, res, test);
+	DFS(0, 0, res, pizzas, homes);
 
 	system_clock::time_point end = system_clock::now();
 	microseconds micro = duration_cast<microseconds>(end - start);

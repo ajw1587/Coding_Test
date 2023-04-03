@@ -8,6 +8,39 @@ using namespace chrono;
 // 자연수 N과 R이 주어지면 서로 다른 N개의 자연수 중 R개를 뽑아 일렬로
 // 나열하는 프로그램을 작성하시오.
 
+//void test_DFS(int idx, int s, vector<int>& res, vector<int> test)
+//{
+//	if (idx == 5)
+//	{
+//		for (int i = 0; i < 5; i++)
+//		{
+//			cout << res[i] << ' ';
+//		}
+//		cout << endl;
+//	}
+//	else
+//	{
+//		// 순서 중복 없이
+//		for (int i = s; i < test.size(); i++)
+//		{
+//			res[idx] = test[i];
+//			test_DFS(idx + 1, i + 1, res, test);
+//		}
+//
+//		// 순서 중복 가능
+//		for (int i = s; i < test.size(); i++)
+//		{
+//			if (ch[i] == 0)
+//			{
+//				ch[i] = 1;
+//				res[idx] = test[i];
+//				test_DFS(idx + 1, 0, res, test);
+//				ch[i] = 0;
+//			}
+//		}
+//	}
+//}
+
 void DFS(int idx, vector<int> info, vector<bool> &ch, vector<int> &res)
 {
 	if (idx == 3)

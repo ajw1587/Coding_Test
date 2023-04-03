@@ -270,6 +270,21 @@
     <ClCompile Include="86_Problem_피자배달.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="87_Problem_섬나라.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="88_Problem_최단거리.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="89_Problem_토마토_BFS.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="90_Problem_심바.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="91_Problem_선자르기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
