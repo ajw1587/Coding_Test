@@ -282,7 +282,25 @@
     <ClCompile Include="90_Problem_심바.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="91_Problem_선자르기.cpp">
+    <ClCompile Include="91_Problem_선자르기_Botton_Up.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="91_Problem_선자르기_Top_Down.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="92_Problem_계단오르기_Top_Down.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="93_Problem_돌다리건너기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="94_Problem_최대부분_증가수열_LIS.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="95_Problem_최대_선연결.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="96_Problem_가장_높은_탑_쌓기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
