@@ -303,6 +303,21 @@
     <ClCompile Include="96_Problem_가장_높은_탑_쌓기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="97_Problem_알리바바.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="98_Problem_알리바바_Top_Down.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="99_Problem_가방_냅색.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="100_Problem_동전교환.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="101_Problem_플로이드_워샬.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
