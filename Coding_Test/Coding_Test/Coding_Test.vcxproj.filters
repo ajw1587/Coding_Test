@@ -315,7 +315,10 @@
     <ClCompile Include="100_Problem_동전교환.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="101_Problem_플로이드_워샬.cpp">
+    <ClCompile Include="102_Problem_플로이드_워샬.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="101_Problem_최대점수_구하기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
