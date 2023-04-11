@@ -321,6 +321,9 @@
     <ClCompile Include="101_Problem_최대점수_구하기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="103_Problem_회장뽑기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
