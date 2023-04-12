@@ -12,23 +12,6 @@ using namespace chrono;
 // 쓰이는 비용의 최소값을 구하는 프로그램을 작성하세요.
 // 왜케 아프냐...
 
-struct Edge
-{
-	int start, end, weight;
-
-	Edge(int a, int b, int w)
-	{
-		start = a;
-		end = b;
-		weight = w;
-	}
-
-	bool operator<(const Edge b) const
-	{
-		return weight > b.weight;
-	}
-};
-
 int No102()
 {
 	system_clock::time_point start = system_clock::now();
