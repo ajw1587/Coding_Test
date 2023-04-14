@@ -60,7 +60,6 @@ int No()
 	int l = 0, r = 0, s = 0, e = 0;
 	int length = 2147000000;
 	int n = sequence.size();	// 5
-	//int sum = sequence[0];
 	int sum = sequence[0];
 
 	while (true)

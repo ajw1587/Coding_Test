@@ -34,7 +34,12 @@ int No()
 	int next = 1;
 	while (cur < targets.size() && next < targets.size())
 	{
-		if (targets[cur][1] > targets[next][0]) next++;
+		if (targets[cur][1] > targets[next][0])
+		{
+			if (targets[cur][1] > targets[next][1])
+				cur = next;
+			next++;
+		}
 		else
 		{
 			cur = next;
