@@ -16,13 +16,22 @@ int No()
 	int r1 = 2, r2 = 3;
 	vector<pair<int, int>> points;
 	
-	int answer = 0;
-	for (int i = 1; i <= r2; i++)
+	long long answer = 0;
+	double r2y = 0, r1y = 0;
+	int side = 0;
+	for (int i = 1; i < r2; i++)
 	{
-		int h2 = floor(sqrt(pow(r2, 2) - pow(i, 2)));
-		cout << h2 << endl;
-		answer += h2 + 1;
+		r2y = sqrt(pow(r2, 2) - pow(i, 2));
+
+		if (r1 > i) r1y = sqrt(pow(r1, 2) - pow(i, 2));
+		else r1y = 0;
+
+		if (r1y - (int)r1y == 0 && r1y != 0)
+			side++;
+
+		answer += ((int)r2y - (int)r1y);
 	}
+	answer = (answer + side + r2 - r1 + 1) * 4;
 
 	system_clock::time_point end = system_clock::now();
 	microseconds micro = duration_cast<microseconds>(end - start);

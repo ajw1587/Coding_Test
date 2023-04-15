@@ -345,6 +345,9 @@
     <ClCompile Include="Programmers_06_아방가르드타일링.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers_07.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
