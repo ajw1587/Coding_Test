@@ -8,7 +8,6 @@ using namespace chrono;
 
 // 두 원 사이의 정수쌍
 // https://school.programmers.co.kr/learn/courses/30/lessons/181187
-// 이거 모르겠네;;
 int No()
 {
 	system_clock::time_point start = system_clock::now();

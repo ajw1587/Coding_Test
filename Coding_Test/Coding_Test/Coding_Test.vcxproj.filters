@@ -345,7 +345,10 @@
     <ClCompile Include="Programmers_06_아방가르드타일링.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Programmers_07.cpp">
+    <ClCompile Include="Programmers_08_광물캐기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_07_과제진행하기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
