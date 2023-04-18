@@ -802,7 +802,13 @@
     <ClCompile Include="Programmers_07_과제진행하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Programmers_09_리코쳇로봇.cpp" />
+    <ClCompile Include="Programmers_09_리코쳇로봇.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Programmers_10_당구연습.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Programmers_11_점찍기.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h" />

@@ -354,6 +354,12 @@
     <ClCompile Include="Programmers_09_리코쳇로봇.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers_10_당구연습.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_11_점찍기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
