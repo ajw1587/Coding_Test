@@ -360,6 +360,12 @@
     <ClCompile Include="Programmers_11_점찍기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers_12_귤고르기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_13_숫자카드나누기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">

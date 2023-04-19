@@ -1,6 +1,7 @@
 #include <iostream>
 #include <chrono>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 using namespace chrono;
@@ -13,10 +14,15 @@ int No()
 
 	//int k = 1, d = 5;
 	int k = 2, d = 4;
+	long long answer = 0;
 
-	for (int i = 0; i <= d; i++)
+	double tmp = 0;
+	for (int i = 0; i <= d; i += k)
 	{
+		tmp = 0;
+		tmp = sqrt(pow(d, 2) - pow(i, 2));
 
+		answer += ((int)tmp / k + 1);
 	}
 
 	system_clock::time_point end = system_clock::now();
