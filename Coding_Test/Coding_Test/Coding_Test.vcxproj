@@ -814,7 +814,10 @@
     <ClCompile Include="Programmers_12_귤고르기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Programmers_13_숫자카드나누기.cpp" />
+    <ClCompile Include="Programmers_13_숫자카드나누기.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Programmers_14_.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h" />
