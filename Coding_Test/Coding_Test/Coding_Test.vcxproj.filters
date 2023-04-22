@@ -366,7 +366,13 @@
     <ClCompile Include="Programmers_13_숫자카드나누기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Programmers_14_.cpp">
+    <ClCompile Include="Programmers_14_우박수열정적분.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_15_롤케이크자르기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_16_택배상자.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
