@@ -21,7 +21,7 @@
     <ClCompile Include="02_Problem.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="format.cpp">
+    <ClCompile Include="999_format.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="03_Problem.cpp">
@@ -373,6 +373,12 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Programmers_16_택배상자.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_17_연속부분수열합의개수.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_18_혼자놀기의달인.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
