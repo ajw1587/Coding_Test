@@ -8,7 +8,7 @@ using namespace chrono;
 // 주차 요금 계산
 // https://school.programmers.co.kr/learn/courses/30/lessons/92341
 // LASEK
-// 라섹 너무 아프다 ㅠㅠ
+// 라섹 너무 아프다 ㅠㅠ 라섹 4일차인데 이제 안아프다 ㄹㅇ
 int No()
 {
     system_clock::time_point start = system_clock::now();
