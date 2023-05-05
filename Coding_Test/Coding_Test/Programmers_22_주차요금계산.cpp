@@ -10,6 +10,7 @@ using namespace chrono;
 // LASEK
 // 라섹 빨리 나았으면 좋겠다.
 // 라섹 거의 다 나았는데 시력은 아직
+// 시력이 왜 안좋아지지
 int No()
 {
     system_clock::time_point start = system_clock::now();
