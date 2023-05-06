@@ -1,16 +1,15 @@
 #include <iostream>
 #include <chrono>
 #include <vector>
+#include <string>
+#include <map>
+#include <stack>
 
 using namespace std;
 using namespace chrono;
 
 // 주차 요금 계산
 // https://school.programmers.co.kr/learn/courses/30/lessons/92341
-// LASEK
-// 라섹 빨리 나았으면 좋겠다.
-// 라섹 거의 다 나았는데 시력은 아직
-// 시력이 왜 안좋아지지
 int No()
 {
     system_clock::time_point start = system_clock::now();
@@ -27,6 +26,16 @@ int No()
       "19:09 0148 OUT",
       "22:59 5961 IN",
       "23:00 5961 OUT" };
+
+    map<int, stack<pair<string, int>>> ch;
+    for (int i = 0; i < records.size(); i++)
+    {
+        int time = stoi(records[i].substr(0, 2)) * 60 + stoi(records[i].substr(3, 2));
+        int car_num = stoi(records[i].substr(6, 4));
+        string in_out = records[i].substr(11, -1);
+
+        ch[car_num].push(make_pair())
+    }
 
     system_clock::time_point end = system_clock::now();
     microseconds micro = duration_cast<microseconds>(end - start);
