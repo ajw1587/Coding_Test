@@ -37,6 +37,7 @@ int No()
 
     // 0을 기준으로 값 나눠주기
 
+
     system_clock::time_point end = system_clock::now();
     microseconds micro = duration_cast<microseconds>(end - start);
     cout << "소요 시간 : " << micro.count() << endl;
