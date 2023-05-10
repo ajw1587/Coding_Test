@@ -11,15 +11,42 @@ using namespace chrono;
 
 string change_num(int n, int k)
 {
-    string tmp;
+    string out;
     while (n)
     {
-        tmp += to_string(n % k);
+        out += to_string(n % k);
         n /= k;
     }
 
-    reverse(tmp.begin(), tmp.end());
-    return tmp;
+    reverse(out.begin(), out.end());
+    return out;
+}
+
+vector<string> divide_num(string num)
+{
+    vector<string> out;
+    string tmp = "";
+
+    for (int i = 0; i < num.size(); i++)
+    {
+        if (num[i] != '0')
+        {
+            tmp += num[i];
+        }
+        else
+        {
+            if (tmp == "1")
+            {
+                tmp = "";
+            }
+            else
+            {
+                
+            }
+        }
+    }
+
+    return out;
 }
 
 int No()
@@ -28,9 +55,6 @@ int No()
 
     int n = 437674;
     int k = 3;
-
-    n = 10;
-    k = 2;
 
     // k 진수로 바꿔주기
     string num = change_num(n, k);
