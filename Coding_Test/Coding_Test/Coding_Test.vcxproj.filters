@@ -396,6 +396,9 @@
     <ClCompile Include="Programmers_23_k진수에서소수개수구하기.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers_24_피로도.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">
