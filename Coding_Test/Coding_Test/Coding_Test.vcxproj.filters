@@ -399,6 +399,12 @@
     <ClCompile Include="Programmers_24_피로도.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers_25_배열자르기cpp.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers_26_교점에별만들기.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="14_Problem.h">

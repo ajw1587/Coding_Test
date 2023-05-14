@@ -5,7 +5,8 @@
 using namespace std;
 using namespace chrono;
 
-// 
+// 교점에 별 만들기
+// https://school.programmers.co.kr/learn/courses/30/lessons/87377
 int No()
 {
     system_clock::time_point start = system_clock::now();
