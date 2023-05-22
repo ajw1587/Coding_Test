@@ -8,30 +8,11 @@ using namespace chrono;
 
 // 교점에 별 만들기
 // https://school.programmers.co.kr/learn/courses/30/lessons/87377
-// 어렵네...?
 
 // Ax + By + E = 0
 // Cx + Dy + F = 0
 // cross_x = (BF - ED) / (AD - BC)
 // cross_y = (EC - AF) / (AD - BC)
-//vector<double> get_dot(vector<int> dot1, vector<int> dot2)
-vector<double> get_dot(double A, double B, double E, double C, double D, double F)
-{
-    //double A = dot1[0], B = dot1[1], E = dot1[2];
-    //double C = dot2[0], D = dot2[1], F = dot2[2];
-    vector<double> cross_dot;
-
-    // 평행일 경우
-    if (A * D - B * C == 0) return cross_dot;
-
-    // 교차점이 있는 경우
-    double cross_x = (B * F - E * D) / (A * D - B * C);
-    double cross_y = (E * C - A * F) / (A * D - B * C);
-    cross_dot.push_back(cross_x);
-    cross_dot.push_back(cross_y);
-
-    return cross_dot;
-}
 
 int No()
 {
