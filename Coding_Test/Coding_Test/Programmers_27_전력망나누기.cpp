@@ -8,6 +8,7 @@ using namespace chrono;
 // 전력망을 둘로 나누기
 // https://school.programmers.co.kr/learn/courses/30/lessons/86971
 // 솔트룩스 코테 통과 못함...
+// 그런데 서류는 통과됐다고 메일이 왔네...? 뭐지...
 
 int No()
 {
