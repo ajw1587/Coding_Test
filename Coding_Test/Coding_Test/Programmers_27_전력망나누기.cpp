@@ -7,8 +7,6 @@ using namespace chrono;
 
 // 전력망을 둘로 나누기
 // https://school.programmers.co.kr/learn/courses/30/lessons/86971
-// 솔트룩스 코테 통과 못함...
-// 그런데 서류는 통과됐다고 메일이 왔네...? 뭐지...
 
 int No()
 {
@@ -20,9 +18,16 @@ int No()
 
     // 일일이 하나씩 전선 잘라보기
     vector<bool> ch_list(n, false);
+    vector<vector<int>> tmp;
     for (int i = 0; i < wires.size(); i++)
     {
+        for (int j = 0; j < wires.size(); j++)
+        {
+            if (j == i) continue;
+            tmp.push_back(wires[j]);
+        }
 
+        tmp.clear();
     }
 
     system_clock::time_point end = system_clock::now();
