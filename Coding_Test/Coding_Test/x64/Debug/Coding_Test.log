@@ -1,0 +1,4 @@
+﻿  zz_TEST.cpp
+C:\02_Study_Cpp\03_Coding_Test\CodingTest\Coding_Test\Coding_Test\Coding_Test\zz_TEST.cpp(16,15): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\02_Study_Cpp\03_Coding_Test\CodingTest\Coding_Test\Coding_Test\Coding_Test\zz_TEST.cpp(17,9): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Coding_Test.vcxproj -> C:\02_Study_Cpp\03_Coding_Test\CodingTest\Coding_Test\Coding_Test\x64\Debug\Coding_Test.exe
